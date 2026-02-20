@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: #09090b; /* zinc-950 */
+    --bg-card: #18181b; /* zinc-900 */
+    --text-main: #fafafa; /* zinc-50 */
+    --text-muted: #a1a1aa; /* zinc-400 */
+    --accent: #3b82f6; /* blue-500 */
+  }
+
+  [data-theme="cozy"] {
+    --bg-base: #fdfbf7; /* warm cream */
+    --bg-card: #f4ewe6; /* slightly darker cream */
+    --text-main: #4a3f35; /* soft brown */
+    --text-muted: #8c7b6c; /* muted brown */
+    --accent: #d97757; /* terracotta */
+  }
+
+  [data-theme="candy"] {
+    --bg-base: #2e1065; /* deep indigo */
+    --bg-card: #4c1d95; /* indigo-900 */
+    --text-main: #fdf4ff; /* fuchsia-50 */
+    --text-muted: #d946ef; /* fuchsia-500 */
+    --accent: #ec4899; /* pink-500 */
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
