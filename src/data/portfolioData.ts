@@ -22,9 +22,9 @@ export const wipProjects = [
         role: "Tech Lead & Co-founder (with Miquella)",
     },
     {
-        id: "lgu-hris",
-        name: "LGU Pagsanjan HRIS",
-        description: "Enterprise MVP for managing local government human resources.",
+        id: "necookie-hub",
+        name: "Necookie Central Hub",
+        description: "Personal Finance Tracker, Todo list, and Journal.",
         role: "Full Stack Architect",
     },
 ];

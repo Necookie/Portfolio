@@ -26,7 +26,7 @@ export function Hero() {
             <FadeIn delay={0.5} className="mt-12">
                 <a
                     href="mailto:contact@example.com"
-                    className="inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-300 border border-accent text-accent rounded hover:bg-accent hover:text-base cursor-pointer"
+                    className="inline-flex items-center justify-center px-8 py-4 font-medium transition-all duration-300 border border-accent text-accent rounded hover:bg-accent hover:text-base cursor-pointer"
                 >
                     Let's Work Together
                 </a>
