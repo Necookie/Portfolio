@@ -1,4 +1,3 @@
-
 import { Hero } from './components/Hero';
 import { TechStack } from './components/TechStack';
 import { FeaturedProject } from './components/FeaturedProject';
@@ -7,6 +6,7 @@ import { WipSection } from './components/WipSection';
 import { Certifications } from './components/Certifications';
 import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { Background } from './components/Background';
+import { AboutGallery } from './components/AboutGallery';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <TechStack />
         <FeaturedProject />
         <StarredRepos />
+        <AboutGallery />
         <WipSection />
         <Certifications />
       </main>
