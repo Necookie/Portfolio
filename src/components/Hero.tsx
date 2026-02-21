@@ -1,6 +1,7 @@
-import React from 'react';
+
 import { profileData } from '../data/portfolioData';
 import { FadeIn } from './FadeIn';
+import { Typewriter } from './Typewriter';
 
 export function Hero() {
     return (
@@ -9,13 +10,13 @@ export function Hero() {
                 <p className="text-accent font-mono mb-4 tracking-wide font-medium">Hi, I'm</p>
             </FadeIn>
             <FadeIn delay={0.2}>
-                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-main mb-6">
-                    {profileData.name}
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-main mb-6 min-h-[1.2em]">
+                    <Typewriter text={profileData.name} delay={500} speed={80} />
                 </h1>
             </FadeIn>
             <FadeIn delay={0.3}>
-                <h2 className="text-3xl md:text-5xl font-semibold text-muted mb-8">
-                    {profileData.tagline}
+                <h2 className="text-3xl md:text-5xl font-semibold text-muted mb-8 min-h-[1.5em]">
+                    <Typewriter text={profileData.tagline} delay={2200} speed={50} />
                 </h2>
             </FadeIn>
             <FadeIn delay={0.4}>
