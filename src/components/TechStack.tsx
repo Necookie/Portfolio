@@ -15,7 +15,7 @@ export function TechStack() {
             <FadeIn delay={0.2}>
                 <div className="flex justify-start items-center">
                     <img
-                        src="https://skillicons.dev/icons?i=python,ts,nextjs,react,tailwind,nodejs,postgres,supabase,docker,github,cloudflare,express,fastapi,vscode&theme=dark"
+                        src="https://skillicons.dev/icons?i=python,ts,nextjs,react,tailwind,nodejs,postgres,supabase,docker,github,cloudflare,express,fastapi,vscode&theme=light"
                         alt="Tech Stack Icons"
                         className="max-w-full hover:scale-[1.02] transition-transform duration-500 will-change-transform"
                     />

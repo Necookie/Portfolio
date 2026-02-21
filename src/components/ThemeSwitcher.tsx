@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Moon, Coffee, Sparkles } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Sun, Moon, Coffee, Sparkles } from 'lucide-react';
 
 const themes = [
-    { id: 'default', icon: Moon, label: 'Cinematic' },
+    { id: 'default', icon: Sun, label: 'Light' },
+    { id: 'dark', icon: Moon, label: 'Cinematic' },
     { id: 'cozy', icon: Coffee, label: 'Cozy' },
     { id: 'candy', icon: Sparkles, label: 'Candy' },
 ];
