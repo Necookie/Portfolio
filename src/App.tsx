@@ -1,5 +1,6 @@
-import React from 'react';
+
 import { Hero } from './components/Hero';
+import { TechStack } from './components/TechStack';
 import { FeaturedProject } from './components/FeaturedProject';
 import { StarredRepos } from './components/StarredRepos';
 import { WipSection } from './components/WipSection';
@@ -11,6 +12,7 @@ function App() {
     <div className="min-h-screen font-sans selection:bg-accent selection:text-base">
       <main className="max-w-5xl mx-auto px-6">
         <Hero />
+        <TechStack />
         <FeaturedProject />
         <StarredRepos />
         <WipSection />
