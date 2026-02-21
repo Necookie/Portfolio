@@ -6,10 +6,12 @@ import { StarredRepos } from './components/StarredRepos';
 import { WipSection } from './components/WipSection';
 import { Certifications } from './components/Certifications';
 import { ThemeSwitcher } from './components/ThemeSwitcher';
+import { Background } from './components/Background';
 
 function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-accent selection:text-base">
+    <div className="min-h-screen font-sans selection:bg-accent selection:text-base relative z-0">
+      <Background />
       <main className="max-w-5xl mx-auto px-6">
         <Hero />
         <TechStack />
