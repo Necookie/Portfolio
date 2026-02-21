@@ -29,23 +29,4 @@ export const wipProjects = [
     },
 ];
 
-export const certifications = [
-    {
-        id: "aws-cpa",
-        title: "AWS Certified Cloud Practitioner",
-        issuer: "Amazon Web Services",
-        year: "2025",
-    },
-    {
-        id: "meta-frontend",
-        title: "Meta Front-End Developer",
-        issuer: "Coursera",
-        year: "2024",
-    },
-    {
-        id: "freecodecamp-rwd",
-        title: "Responsive Web Design",
-        issuer: "freeCodeCamp",
-        year: "2023",
-    },
-];
+// Certifications are now loaded dynamically from /certifications.json
