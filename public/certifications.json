@@ -9,7 +9,8 @@
         "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771768005/Coursera_EOJYIZLLYXE9_page-0001_ozwjy2.jpg",
         "skills": [
             "DevOps"
-        ]
+        ],
+        "category": "Courses"
     },
     {
         "id": "codechum-npc-2025",
@@ -20,7 +21,8 @@
         "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771646720/OrlandaDheynMichael_page-0001_alpphu.jpg",
         "skills": [
             "Programming"
-        ]
+        ],
+        "category": "Competitions"
     },
     {
         "id": "codechum-java-2025",
@@ -33,20 +35,23 @@
             "Software Development",
             "Java",
             "+1 skill"
-        ]
+        ],
+        "category": "Courses"
     },
     {
         "id": "dict-data-privacy-2025",
         "title": "4-Hour Webinar on Data Privacy Awareness",
         "issuer": "Department of Information and Communications Technology (DICT) – Region XI",
         "issueDate": "2025",
-        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735732/Orlanda_-_Data_Privacy_Awareness_page-0001_c6fcjw.jpg"
+        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735732/Orlanda_-_Data_Privacy_Awareness_page-0001_c6fcjw.jpg",
+        "category": "Webinars & Training"
     },
     {
         "id": "ai-ready-asean-hour-of-code-2025",
         "title": "AI Ready ASEAN – Hour of Code Participation",
         "issuer": "AI Ready ASEAN Programme | ASEAN Foundation",
         "issueDate": "2025",
-        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735717/Orlanda_-_Hour_of_Code_page-0001_t7ulca.jpg"
+        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735717/Orlanda_-_Hour_of_Code_page-0001_t7ulca.jpg",
+        "category": "Webinars & Training"
     }
 ]
