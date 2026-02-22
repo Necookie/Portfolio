@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -41,6 +41,14 @@ export function Navbar() {
                             {link.name}
                         </a>
                     ))}
+                    <div className="flex items-center gap-4 ml-4 pl-4 border-l border-card">
+                        <a href="https://github.com/Necookie" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors" aria-label="GitHub">
+                            <Github size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/dheyn-michael-orlanda-35b6b931b/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors" aria-label="LinkedIn">
+                            <Linkedin size={20} />
+                        </a>
+                    </div>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -66,6 +74,14 @@ export function Navbar() {
                             {link.name}
                         </a>
                     ))}
+                    <div className="flex items-center justify-center gap-8 py-4 px-6">
+                        <a href="https://github.com/Necookie" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors flex items-center gap-2">
+                            <Github size={20} /> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/dheyn-michael-orlanda-35b6b931b/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors flex items-center gap-2">
+                            <Linkedin size={20} /> LinkedIn
+                        </a>
+                    </div>
                 </div>
             )}
         </header>

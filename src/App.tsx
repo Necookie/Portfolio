@@ -8,13 +8,14 @@ import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { Background } from './components/Background';
 import { AboutGallery } from './components/AboutGallery';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-accent selection:text-base relative z-0">
+    <div className="min-h-screen font-sans selection:bg-accent selection:text-base relative z-0 flex flex-col">
       <Background />
       <Navbar />
-      <main className="max-w-5xl mx-auto px-6 pt-24">
+      <main className="max-w-5xl mx-auto px-6 pt-24 flex-grow">
         <Hero />
         <TechStack />
         <FeaturedProject />
@@ -23,6 +24,7 @@ function App() {
         <WipSection />
         <Certifications />
       </main>
+      <Footer />
       <ThemeSwitcher />
     </div>
   );
