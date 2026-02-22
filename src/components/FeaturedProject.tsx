@@ -36,9 +36,16 @@ export function FeaturedProject() {
                             </p>
 
                             <ul className="flex flex-wrap gap-2 font-mono text-xs text-muted mb-8">
-                                {featuredProject.techStack.map((tech) => (
-                                    <li key={tech} className="bg-base px-2 py-1 rounded border border-base/50">{tech}</li>
-                                ))}
+                                {/* Extract the first 4 tools to display on the featured card */}
+                                {featuredProject.techStack
+                                    .flatMap((category: any) => category.items)
+                                    .slice(0, 4)
+                                    .map((tech: any) => (
+                                        <li key={tech.name} className="bg-base px-2 py-1 rounded border border-base/50">{tech.name}</li>
+                                    ))}
+                                {featuredProject.techStack.flatMap((category: any) => category.items).length > 4 && (
+                                    <li className="bg-base px-2 py-1 rounded border border-base/50">...</li>
+                                )}
                             </ul>
 
                             <Link

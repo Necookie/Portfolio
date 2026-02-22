@@ -17,32 +17,35 @@ export function ProjectDetailsPage() {
     }
 
     return (
-        <div className="py-24">
-            <FadeIn>
-                <Link to="/" className="inline-flex items-center gap-2 text-muted hover:text-main mb-8 transition-colors">
-                    <ArrowLeft className="w-4 h-4" /> Back to Home
-                </Link>
-                <div className="flex items-center gap-4 mb-4">
-                    <span className="inline-block py-1 px-3 text-xs font-mono font-semibold tracking-wider text-accent bg-accent/10 rounded-full">
-                        {project.status}
-                    </span>
-                </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-main mb-8">{project.title}</h1>
-            </FadeIn>
-
+        <div className="pt-8 pb-24 max-w-6xl mx-auto w-full">
             <div className="grid md:grid-cols-4 gap-12">
-                {/* Table of Contents Sidebar */}
-                <FadeIn delay={0.2} className="md:col-span-1 hidden md:block">
-                    <div className="sticky top-24 bg-card p-6 rounded-lg border border-base shadow-lg">
-                        <h3 className="font-mono text-main font-semibold mb-4">Contents</h3>
-                        <ul className="space-y-3 text-sm text-muted">
-                            <li><a href="#overview" className="hover:text-accent transition-colors">Overview</a></li>
-                            <li><a href="#features" className="hover:text-accent transition-colors">Key Features</a></li>
-                            <li><a href="#tech" className="hover:text-accent transition-colors">Tech Stack</a></li>
-                            <li><a href="#gallery" className="hover:text-accent transition-colors">Gallery</a></li>
-                        </ul>
-                    </div>
-                </FadeIn>
+                {/* Left Sidebar (Title & TOC) */}
+                <div className="md:col-span-1">
+                    <FadeIn>
+                        <Link to="/" className="inline-flex items-center gap-2 text-muted hover:text-main mb-8 transition-colors">
+                            <ArrowLeft className="w-4 h-4" /> Back to Home
+                        </Link>
+                        <div className="flex items-center gap-4 mb-4">
+                            <span className="inline-block py-1 px-3 text-xs font-mono font-semibold tracking-wider text-accent bg-accent/10 rounded-full">
+                                {project.status}
+                            </span>
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-bold text-main mb-8">{project.title}</h1>
+                    </FadeIn>
+
+                    {/* Table of Contents */}
+                    <FadeIn delay={0.2} className="hidden md:block">
+                        <div className="sticky top-24 bg-card p-6 rounded-lg border border-base shadow-lg">
+                            <h3 className="font-mono text-main font-semibold mb-4">Contents</h3>
+                            <ul className="space-y-3 text-sm text-muted">
+                                <li><a href="#overview" className="hover:text-accent transition-colors">Overview</a></li>
+                                <li><a href="#features" className="hover:text-accent transition-colors">Key Features</a></li>
+                                <li><a href="#tech" className="hover:text-accent transition-colors">Tech Stack</a></li>
+                                <li><a href="#gallery" className="hover:text-accent transition-colors">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </FadeIn>
+                </div>
 
                 {/* Main Content Area */}
                 <div className="md:col-span-3 space-y-16">
@@ -82,11 +85,32 @@ export function ProjectDetailsPage() {
                     <FadeIn delay={0.5}>
                         <section id="tech" className="scroll-mt-24">
                             <h2 className="text-2xl font-bold text-main mb-6 border-b border-base pb-2">Tech Stack</h2>
-                            <ul className="flex flex-wrap gap-3 font-mono text-sm text-muted">
-                                {project.techStack.map((tech) => (
-                                    <li key={tech} className="bg-card border border-base px-4 py-2 rounded-lg">{tech}</li>
+                            <div className="space-y-8">
+                                {project.techStack.map((categoryObj: any, idx: number) => (
+                                    <div key={idx}>
+                                        <h3 className="text-lg font-bold text-main mb-4">{categoryObj.category}</h3>
+                                        <div className="grid sm:grid-cols-2 gap-4">
+                                            {categoryObj.items.map((item: any, i: number) => (
+                                                <div key={i} className="flex gap-4 p-4 rounded-lg bg-card border border-base items-start">
+                                                    <img
+                                                        src={`https://skillicons.dev/icons?i=${item.icon}&theme=light`}
+                                                        alt={item.name}
+                                                        className="w-10 h-10 object-contain shrink-0"
+                                                        onError={(e) => {
+                                                            // Fallback if icon isn't found on skillicons
+                                                            (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${item.name.charAt(0)}&background=random&color=fff&rounded=true&size=40`;
+                                                        }}
+                                                    />
+                                                    <div>
+                                                        <h4 className="font-bold text-main text-sm mb-1">{item.name}</h4>
+                                                        <p className="text-xs text-muted leading-relaxed">{item.description}</p>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </section>
                     </FadeIn>
 
