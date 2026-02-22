@@ -74,7 +74,7 @@ export function Certifications() {
                     {sortedCategories.map((category) => (
                         <div key={category} className="bg-transparent rounded-2xl">
                             <FadeIn>
-                                <h2 className="text-2xl font-bold text-main mb-8 flex items-center gap-2 border-b border-card pb-4">
+                                <h2 className="text-2xl md:text-3xl font-bold text-main mb-8 flex items-center gap-2 border-b border-card pb-4">
                                     {category}
                                 </h2>
                             </FadeIn>
@@ -82,10 +82,10 @@ export function Certifications() {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {groupedCertifications[category].map((cert, index) => (
                                     <FadeIn key={cert.id} delay={index * 0.1} className="h-full">
-                                        <div className="flex flex-col h-full bg-card/30 border border-card rounded-2xl overflow-hidden hover:border-accent/50 transition-colors group/card">
+                                        <div className="flex flex-col h-full bg-card shadow-sm border border-black/5 dark:border-white/5 rounded-2xl overflow-hidden hover:border-accent/50 hover:shadow-md transition-all group/card">
                                             {/* Image Section */}
                                             <div
-                                                className="relative aspect-[4/3] bg-black/40 cursor-pointer overflow-hidden border-b border-card"
+                                                className="relative aspect-[4/3] bg-muted/10 cursor-pointer overflow-hidden border-b border-black/5 dark:border-white/5"
                                                 onClick={() => setSelectedImage(cert.image)}
                                             >
                                                 <img
@@ -95,7 +95,7 @@ export function Certifications() {
                                                     loading="lazy"
                                                 />
                                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                                                    <div className="flex items-center gap-2 text-white bg-black/60 px-5 py-2.5 rounded-full transform translate-y-4 group-hover/card:translate-y-0 transition-transform duration-300 border border-white/10">
+                                                    <div className="flex items-center gap-2 text-white bg-black/60 px-5 py-2.5 rounded-full transform translate-y-4 group-hover/card:translate-y-0 transition-transform duration-300 border border-white/10 shadow-lg">
                                                         <Maximize2 className="w-4 h-4" />
                                                         <span className="text-sm font-semibold">View Fullscreen</span>
                                                     </div>
@@ -111,7 +111,7 @@ export function Certifications() {
                                                 {cert.skills && cert.skills.length > 0 && (
                                                     <div className="flex flex-wrap gap-2 mb-6">
                                                         {cert.skills.map(skill => (
-                                                            <span key={skill} className="px-3.5 py-1.5 bg-white text-black text-xs font-bold rounded-full shadow-sm">
+                                                            <span key={skill} className="px-3.5 py-1.5 bg-accent/10 text-accent border border-accent/20 text-xs font-bold rounded-full shadow-sm">
                                                                 {skill}
                                                             </span>
                                                         ))}
@@ -119,10 +119,10 @@ export function Certifications() {
                                                 )}
 
                                                 <div className="mt-auto">
-                                                    <p className="text-zinc-300 font-medium mb-1">{cert.issuer}</p>
+                                                    <p className="text-muted font-semibold mb-1">{cert.issuer}</p>
 
                                                     {cert.issueDate && (
-                                                        <p className="text-zinc-400 text-sm mb-5">
+                                                        <p className="text-muted text-sm mb-5 opacity-80">
                                                             Issued {cert.issueDate}
                                                         </p>
                                                     )}
@@ -132,7 +132,7 @@ export function Certifications() {
                                                             href={cert.credentialUrl}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            className="inline-flex items-center gap-2 px-4 py-2 bg-transparent hover:bg-white/5 border border-zinc-700 hover:border-zinc-500 text-main text-sm font-semibold rounded-xl transition-all w-full justify-center"
+                                                            className="inline-flex items-center gap-2 px-4 py-2 mt-2 bg-transparent hover:bg-accent/5 border border-black/10 dark:border-white/10 hover:border-accent/40 text-main text-sm font-semibold rounded-xl transition-all w-full justify-center"
                                                         >
                                                             Show credential <ExternalLink className="w-4 h-4" />
                                                         </a>
