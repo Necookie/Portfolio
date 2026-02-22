@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Cyan Cube Gradients -->
+    <linearGradient id="c-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4df8ff" />
+      <stop offset="100%" stop-color="#18c2ff" />
+    </linearGradient>
+    <linearGradient id="c-left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00aeff" />
+      <stop offset="100%" stop-color="#0062ff" />
+    </linearGradient>
+    <linearGradient id="c-right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4961ff" />
+      <stop offset="100%" stop-color="#2a29ff" />
+    </linearGradient>
+
+    <!-- Pink Cube Gradients -->
+    <linearGradient id="p-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef7aff" />
+      <stop offset="100%" stop-color="#c143ff" />
+    </linearGradient>
+    <linearGradient id="p-left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a43bff" />
+      <stop offset="100%" stop-color="#6911ff" />
+    </linearGradient>
+    <linearGradient id="p-right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7e2bf9" />
+      <stop offset="100%" stop-color="#4904ce" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Cube (Cyan) -->
+  <g transform="translate(128, 89)">
+    <polygon points="0,0 28,-16 0,-32 -28,-16" fill="url(#c-top)" />
+    <polygon points="0,0 -28,-16 -28,16 0,32" fill="url(#c-left)" />
+    <polygon points="0,0 0,32 28,16 28,-16" fill="url(#c-right)" />
+  </g>
+
+  <!-- Left Cube (Cyan) -->
+  <g transform="translate(60, 128)">
+    <polygon points="0,0 28,-16 0,-32 -28,-16" fill="url(#c-top)" />
+    <polygon points="0,0 -28,-16 -28,16 0,32" fill="url(#c-left)" />
+    <polygon points="0,0 0,32 28,16 28,-16" fill="url(#c-right)" />
+  </g>
+
+  <!-- Right Cube (Pink) -->
+  <g transform="translate(196, 128)">
+    <polygon points="0,0 28,-16 0,-32 -28,-16" fill="url(#p-top)" />
+    <polygon points="0,0 -28,-16 -28,16 0,32" fill="url(#p-left)" />
+    <polygon points="0,0 0,32 28,16 28,-16" fill="url(#p-right)" />
+  </g>
+
+  <!-- Bottom Cube (Pink) -->
+  <g transform="translate(128, 167)">
+    <polygon points="0,0 28,-16 0,-32 -28,-16" fill="url(#p-top)" />
+    <polygon points="0,0 -28,-16 -28,16 0,32" fill="url(#p-left)" />
+    <polygon points="0,0 0,32 28,16 28,-16" fill="url(#p-right)" />
+  </g>
+</svg>
