@@ -30,10 +30,9 @@ export function ProjectDetailsPage() {
                                 {project.status}
                             </span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-main mb-8">{project.title}</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-main mb-12">{project.title}</h1>
                     </FadeIn>
 
-                    {/* Table of Contents */}
                     <FadeIn delay={0.2} className="hidden md:block">
                         <div className="sticky top-24 bg-card p-6 rounded-lg border border-base shadow-lg">
                             <h3 className="font-mono text-main font-semibold mb-4">Contents</h3>

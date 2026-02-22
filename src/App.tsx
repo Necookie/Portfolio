@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ScrollToTop } from './components/ScrollToTop';
 import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { Background } from './components/Background';
 import { Navbar } from './components/Navbar';
@@ -10,6 +11,7 @@ import { ProjectDetailsPage } from './pages/ProjectDetailsPage';
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen font-sans selection:bg-accent selection:text-base relative z-0 flex flex-col">
         <Background />
         <Navbar />

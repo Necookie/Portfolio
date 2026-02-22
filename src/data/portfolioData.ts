@@ -57,7 +57,7 @@ export const projects = [
             "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771775920/4893a112-a000-4ddf-b455-ba2fa8e2e2c1.png",
             "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771775923/969cd98f-30a0-41d5-9281-6e0eda20c1d6.png"
         ],
-        link: "#", // Placeholder for actual live link
+        link: "https://portracv.necookie.dev", // Live link
     }
 ];
 
