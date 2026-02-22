@@ -7,12 +7,14 @@ import { Certifications } from './components/Certifications';
 import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { Background } from './components/Background';
 import { AboutGallery } from './components/AboutGallery';
+import { Navbar } from './components/Navbar';
 
 function App() {
   return (
     <div className="min-h-screen font-sans selection:bg-accent selection:text-base relative z-0">
       <Background />
-      <main className="max-w-5xl mx-auto px-6">
+      <Navbar />
+      <main className="max-w-5xl mx-auto px-6 pt-24">
         <Hero />
         <TechStack />
         <FeaturedProject />

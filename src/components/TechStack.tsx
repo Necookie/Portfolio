@@ -2,7 +2,7 @@ import { FadeIn } from './FadeIn';
 
 export function TechStack() {
     return (
-        <section className="py-24 border-t border-card">
+        <section id="skills" className="py-24 border-t border-card">
             <FadeIn>
                 <div className="flex items-center gap-4 mb-12">
                     <span className="font-mono text-accent text-xl">01.5</span>

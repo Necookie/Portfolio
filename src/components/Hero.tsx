@@ -5,7 +5,7 @@ import { Typewriter } from './Typewriter';
 
 export function Hero() {
     return (
-        <section className="min-h-[80vh] flex flex-col md:flex-row items-center justify-between py-20 gap-12">
+        <section id="about" className="min-h-[80vh] flex flex-col md:flex-row items-center justify-between py-20 gap-12">
             <div className="flex-1 flex flex-col justify-center">
                 <FadeIn delay={0.1}>
                     <p className="text-accent font-mono mb-4 tracking-wide font-medium">Hi, I'm</p>

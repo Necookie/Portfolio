@@ -8,7 +8,7 @@ export function AboutGallery() {
     ];
 
     return (
-        <section className="py-24 border-t border-card">
+        <section id="gallery" className="py-24 border-t border-card">
             <FadeIn>
                 <div className="flex items-center gap-4 mb-16">
                     <span className="font-mono text-accent text-xl">04.</span>
