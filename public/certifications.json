@@ -5,5 +5,21 @@
         "issuer": "CodeChum",
         "year": "2025",
         "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771646720/OrlandaDheynMichael_page-0001_alpphu.jpg"
+    },
+    {
+        "id": "dict-data-privacy-2025",
+        "title": "4-Hour Webinar on Data Privacy Awareness",
+        "issuer": "Department of Information and Communications Technology (DICT) – Region XI",
+        "year": "2025",
+        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735732/Orlanda_-_Data_Privacy_Awareness_page-0001_c6fcjw.jpg",
+        "description": "Completed a 4-hour webinar on Data Privacy Awareness conducted by DICT Region XI (Davao del Sur Provincial Office). The session covered core principles of data protection, responsible handling of personal information, and compliance with national privacy regulations. Strengthened my understanding of cybersecurity fundamentals, ethical data practices, and the importance of safeguarding user information in digital systems."
+    },
+    {
+        "id": "ai-ready-asean-hour-of-code-2025",
+        "title": "AI Ready ASEAN – Hour of Code Participation",
+        "issuer": "AI Ready ASEAN Programme | ASEAN Foundation",
+        "year": "2025",
+        "image": "https://res.cloudinary.com/dd6gz4moa/image/upload/v1771735717/Orlanda_-_Hour_of_Code_page-0001_t7ulca.jpg",
+        "description": "Participated in the AI Ready ASEAN 'Hour of Code' program implemented by Break the Fake Movement in partnership with the ASEAN Foundation and supported by Google.org. Completed 3 hours of training focused on foundational coding concepts, digital literacy, and responsible AI awareness. Reinforced practical programming skills while exploring the ethical and societal impact of artificial intelligence technologies."
     }
 ]
