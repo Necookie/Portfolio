@@ -1,4 +1,3 @@
-import React from 'react';
 import { wipProjects } from '../data/portfolioData';
 import { FadeIn } from './FadeIn';
 import { Hammer } from 'lucide-react';

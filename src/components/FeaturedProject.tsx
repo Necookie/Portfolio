@@ -1,4 +1,3 @@
-import React from 'react';
 import { featuredProject } from '../data/portfolioData';
 import { FadeIn } from './FadeIn';
 import { ExternalLink } from 'lucide-react';
