@@ -9,7 +9,7 @@ const themes = [
 ];
 
 export function ThemeSwitcher() {
-    const [currentTheme, setCurrentTheme] = useState('default');
+    const [currentTheme, setCurrentTheme] = useState('cozy');
 
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', currentTheme);

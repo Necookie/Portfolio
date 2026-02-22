@@ -4,35 +4,55 @@
 
 @layer base {
   :root {
-    --bg-base: #fafafa; /* zinc-50 */
-    --bg-card: #ffffff; /* white */
-    --text-main: #09090b; /* zinc-950 */
-    --text-muted: #52525b; /* zinc-600 */
-    --accent: #3b82f6; /* blue-500 */
+    --bg-base: #fdfbf7;
+    /* warm cream */
+    --bg-card: #f4efe6;
+    /* slightly darker cream */
+    --text-main: #4a3f35;
+    /* soft brown */
+    --text-muted: #8c7b6c;
+    /* muted brown */
+    --accent: #d97757;
+    /* terracotta */
   }
 
   [data-theme="dark"] {
-    --bg-base: #09090b; /* zinc-950 */
-    --bg-card: #18181b; /* zinc-900 */
-    --text-main: #fafafa; /* zinc-50 */
-    --text-muted: #a1a1aa; /* zinc-400 */
-    --accent: #3b82f6; /* blue-500 */
+    --bg-base: #09090b;
+    /* zinc-950 */
+    --bg-card: #18181b;
+    /* zinc-900 */
+    --text-main: #fafafa;
+    /* zinc-50 */
+    --text-muted: #a1a1aa;
+    /* zinc-400 */
+    --accent: #3b82f6;
+    /* blue-500 */
   }
 
-  [data-theme="cozy"] {
-    --bg-base: #fdfbf7; /* warm cream */
-    --bg-card: #f4efe6; /* slightly darker cream */
-    --text-main: #4a3f35; /* soft brown */
-    --text-muted: #8c7b6c; /* muted brown */
-    --accent: #d97757; /* terracotta */
+  [data-theme="default"] {
+    --bg-base: #fafafa;
+    /* zinc-50 */
+    --bg-card: #ffffff;
+    /* white */
+    --text-main: #09090b;
+    /* zinc-950 */
+    --text-muted: #52525b;
+    /* zinc-600 */
+    --accent: #3b82f6;
+    /* blue-500 */
   }
 
   [data-theme="candy"] {
-    --bg-base: #2e1065; /* deep indigo */
-    --bg-card: #4c1d95; /* indigo-900 */
-    --text-main: #fdf4ff; /* fuchsia-50 */
-    --text-muted: #d946ef; /* fuchsia-500 */
-    --accent: #ec4899; /* pink-500 */
+    --bg-base: #2e1065;
+    /* deep indigo */
+    --bg-card: #4c1d95;
+    /* indigo-900 */
+    --text-main: #fdf4ff;
+    /* fuchsia-50 */
+    --text-muted: #d946ef;
+    /* fuchsia-500 */
+    --accent: #ec4899;
+    /* pink-500 */
   }
 
   body {
