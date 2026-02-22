@@ -41,14 +41,6 @@ export function Navbar() {
                             {link.name}
                         </a>
                     ))}
-                    <a
-                        href="https://portracv.necookie.dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-medium px-4 py-2 rounded border border-accent text-accent hover:bg-accent hover:text-base transition-colors"
-                    >
-                        PortraCV
-                    </a>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -74,17 +66,6 @@ export function Navbar() {
                             {link.name}
                         </a>
                     ))}
-                    <div className="p-6">
-                        <a
-                            href="https://portracv.necookie.dev"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="block text-sm font-medium px-4 py-3 rounded border border-accent text-accent hover:bg-accent hover:text-base transition-colors text-center"
-                        >
-                            PortraCV
-                        </a>
-                    </div>
                 </div>
             )}
         </header>
