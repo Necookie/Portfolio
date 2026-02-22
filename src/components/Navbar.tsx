@@ -30,9 +30,13 @@ export function Navbar() {
                 }`}
         >
             <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold text-main tracking-tighter">
+                <Link
+                    to="/"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="text-xl font-bold text-main tracking-tighter"
+                >
                     necookie<span className="text-accent">.dev</span>
-                </a>
+                </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8">
