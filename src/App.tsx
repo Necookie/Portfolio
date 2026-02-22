@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { CertificationsPage } from './pages/CertificationsPage';
+import { ProjectDetailsPage } from './pages/ProjectDetailsPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <main className="max-w-5xl mx-auto px-6 pt-24 flex-grow w-full">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects/:id" element={<ProjectDetailsPage />} />
             <Route path="/certifications" element={<CertificationsPage />} />
           </Routes>
         </main>
