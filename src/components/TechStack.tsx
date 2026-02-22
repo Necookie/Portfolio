@@ -13,12 +13,15 @@ export function TechStack() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-                <div className="flex justify-start items-center">
-                    <img
-                        src="https://skillicons.dev/icons?i=python,ts,nextjs,react,tailwind,nodejs,postgres,supabase,docker,github,cloudflare,express,fastapi,vscode&theme=light"
-                        alt="Tech Stack Icons"
-                        className="max-w-full hover:scale-[1.02] transition-transform duration-500 will-change-transform"
-                    />
+                <div className="flex justify-start items-center flex-wrap gap-3">
+                    {['python', 'ts', 'nextjs', 'react', 'tailwind', 'nodejs', 'postgres', 'supabase', 'docker', 'github', 'cloudflare', 'express', 'fastapi', 'vscode'].map((icon) => (
+                        <img
+                            key={icon}
+                            src={`https://skillicons.dev/icons?i=${icon}&theme=light`}
+                            alt={`${icon} icon`}
+                            className="w-12 h-12 hover:scale-125 transition-transform duration-300 will-change-transform"
+                        />
+                    ))}
                 </div>
             </FadeIn>
 
