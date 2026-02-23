@@ -41,7 +41,7 @@ export function Hero() {
                         {/* Glow effect */}
                         <div className="absolute inset-0 bg-accent/20 blur-2xl group-hover:bg-accent/40 transition-colors duration-500 z-0"></div>
                         <img
-                            src="https://res.cloudinary.com/dd6gz4moa/image/upload/v1771648118/2x2_g7s48l.png"
+                            src="https://res.cloudinary.com/dd6gz4moa/image/upload/v1771836833/ID_2_a1nwkm.jpg"
                             alt="Dheyn Michael Orlanda"
                             className="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-110"
                         />
