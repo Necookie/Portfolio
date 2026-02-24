@@ -1,7 +1,7 @@
 import { FadeIn } from './FadeIn';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -12,7 +12,7 @@ const containerVariants = {
     }
 };
 
-const textContainerVariants = {
+const textContainerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -23,7 +23,7 @@ const textContainerVariants = {
     }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 15, scale: 0.9 },
     visible: {
         opacity: 1,
@@ -33,7 +33,7 @@ const itemVariants = {
     }
 };
 
-const textItemVariants = {
+const textItemVariants: Variants = {
     hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" } }
 };
