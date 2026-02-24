@@ -1,8 +1,8 @@
 export const profileData = {
     name: "Dheyn Michael Orlanda",
     alias: "Necookie",
-    tagline: "Full Stack Developer & Tech Lead",
-    bio: "Translating real-world workflows into scalable software. Leveraging 4 years of print shop experience to build domain-specific automation.",
+    tagline: "Systems Engineer | Cloud, DevOps & Scalable Software",
+    bio: "Translating real-world workflows into reliable, scalable infrastructure and automation-first software. Leveraging 4 years of print shop experience to build domain-specific solutions.",
 };
 
 export const projects = [
