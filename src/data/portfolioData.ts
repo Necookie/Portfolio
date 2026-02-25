@@ -7,6 +7,49 @@ export const profileData = {
 
 export const projects = [
     {
+        id: "aetheros",
+        title: "AetherOS",
+        status: "Live in Production",
+        problem: "Building a deterministic web-based operating system simulator is complex without compromising on modern web architecture and performance.",
+        solution: "A web-based AI-integrated operating system simulator acting as an educational and diagnostic platform bridging systems theory and conversational AI.",
+        keyFeatures: [
+            "Desktop UI powered by React, Vite, Tailwind CSS, and Zustand",
+            "Kernel Simulation utilizing a persistent, tick-based Web Worker to handle deterministic state like processes and CPU metrics",
+            "Backend API built with Node.js and Fastify for proxying requests to an AI Agent",
+            "Desktop Shell with draggable window bounds and an xterm.js powered Command Line Interface terminal"
+        ],
+        techStack: [
+            {
+                category: "Frontend Desktop UI",
+                items: [
+                    { name: "React.js", description: "UI library for building the desktop environment.", icon: "react" },
+                    { name: "Zustand", description: "Small, fast and scalable bearbones state-management solution.", icon: "react" },
+                    { name: "Tailwind CSS", description: "Utility-first CSS framework for styling.", icon: "tailwind" }
+                ]
+            },
+            {
+                category: "Kernel & Architecture",
+                items: [
+                    { name: "Web Workers", description: "Persistent, tick-based worker offloading computation from main thread.", icon: "js" },
+                    { name: "Node.js", description: "Runtime environment for the server-side backend.", icon: "nodejs" },
+                    { name: "Fastify", description: "Fast and low overhead web framework for Node.js API.", icon: "fastify" }
+                ]
+            },
+            {
+                category: "AI & Utilities",
+                items: [
+                    { name: "OpenAI API", description: "AI Agent powering the system assistant.", icon: "py" },
+                    { name: "Docker", description: "Containerized deployment for PostgreSQL and services.", icon: "docker" }
+                ]
+            }
+        ],
+        gallery: [
+            "https://res.cloudinary.com/dd6gz4moa/image/upload/v1772039645/3a23e258-2124-4002-bc02-e965a4fda9ea.png",
+            "https://res.cloudinary.com/dd6gz4moa/image/upload/v1772039642/d7498ba5-8d08-4eb1-9228-b5f424bb7a96.png"
+        ],
+        link: "https://aetheros.necookie.dev"
+    },
+    {
         id: "neurocross",
         title: "NeuroCross",
         status: "Live in Production",
