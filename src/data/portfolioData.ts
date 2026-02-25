@@ -7,6 +7,55 @@ export const profileData = {
 
 export const projects = [
     {
+        id: "neurocross",
+        title: "NeuroCross",
+        status: "Live in Production",
+        problem: "Traffic intersection control and behavioral simulation is difficult to visualize and tweak in real-time.",
+        solution: "Realtime traffic intersection simulation with a FastAPI physics engine and a React + Vite control desk UI.",
+        keyFeatures: [
+            "Simulates a four-way, two-lane intersection with adaptive traffic light phases and vehicle dynamics",
+            "Streams live simulation state to a visual dashboard with real-time controls for weather and traffic arrival rates",
+            "Vehicle dynamics use an IDM-style model with acceleration, deceleration, and safe headway",
+            "Gridlock prevention and weather conditions impacting friction and arrival rates"
+        ],
+        techStack: [
+            {
+                category: "Core Frontend Framework",
+                items: [
+                    { name: "React.js (v19)", description: "UI library for building the interface.", icon: "react" },
+                    { name: "Vite (v7)", description: "Ultra-fast frontend build tool and development server.", icon: "vite" },
+                    { name: "JavaScript", description: "The primary programming language used.", icon: "js" }
+                ]
+            },
+            {
+                category: "Styling & Design",
+                items: [
+                    { name: "Tailwind CSS", description: "Utility-first CSS framework for styling.", icon: "tailwind" },
+                    { name: "Framer Motion", description: "Animation library for subtle motion and UI transitions.", icon: "framer" }
+                ]
+            },
+            {
+                category: "Backend Engine",
+                items: [
+                    { name: "Python", description: "Core language for the physics and simulation model.", icon: "python" },
+                    { name: "FastAPI", description: "High-performance web framework for the backend API.", icon: "fastapi" },
+                    { name: "Uvicorn", description: "ASGI web server implementation for Python.", icon: "python" }
+                ]
+            },
+            {
+                category: "Utilities & Infrastructure",
+                items: [
+                    { name: "Axios", description: "Promise-based HTTP client for the browser.", icon: "js" },
+                    { name: "Lucide Icons", description: "Beautiful and consistent icon toolkit.", icon: "react" }
+                ]
+            }
+        ],
+        gallery: [
+            "https://res.cloudinary.com/dd6gz4moa/image/upload/v1772037932/76efa990-5375-483d-87e2-bc036a432683.png"
+        ],
+        link: "https://neurocross.necookie.dev", // Live link
+    },
+    {
         id: "portracv",
         title: "PortraCV",
         status: "Live in Production",
@@ -60,6 +109,8 @@ export const projects = [
         link: "https://portracv.necookie.dev", // Live link
     }
 ];
+
+export const featuredProjects = projects;
 
 export const featuredProject = projects[0];
 
